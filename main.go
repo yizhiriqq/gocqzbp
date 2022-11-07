@@ -84,3 +84,21 @@ func runChild() error {
 	}
 	return cmd.Wait()
 }
+./gocqzbp [-D] [-c config.yml] [-d] [-h] [-n nickname] [-p prefix] [-w] [-faststart] [key xxxx] qq1 qq2 qq3 ...
+
+Options:
+  -D    debug mode
+  -c string
+        configuration filename (default "config.yml")
+  -d    running as a daemon
+  -faststart
+        skip waiting 5 seconds
+  -h    this Help
+  -n string
+        Set default nickname. (default "yoki")
+  -p string
+        Set command prefix. (default "/")
+  -w string
+        cover the working directory
+import _ "github.com/FloatTech/ZeroBot-Plugin/plugin/chat"	
+			    import _ "github.com/FloatTech/ZeroBot-Plugin/plugin/score" 
